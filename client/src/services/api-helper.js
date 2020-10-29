@@ -6,7 +6,7 @@ import Axios from 'axios'
 let apiUrl
 
 const apiUrls = {
-    production: '',
+    production: 'https://friendsinaction.herokuapp.com/',
     development: 'http://localhost:3000/'
 }
 
