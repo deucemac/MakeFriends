@@ -39,7 +39,7 @@ export const getFriendFromFriendship = async (id) => {
   return resp.data
 }
 
-export const updateUserStatus =async (id, status)=>{
+export const updateUserStatus = async (id, status)=>{
   const resp = await api.put(`/users/${id}`, { status: status })
   return resp.data
 }

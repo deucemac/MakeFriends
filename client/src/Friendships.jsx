@@ -132,6 +132,10 @@ export default class Friendships extends Component {
     }
   }
 
+  componentWillUnmount() {
+    
+  }
+
 
 
   render() {
@@ -174,6 +178,7 @@ export default class Friendships extends Component {
         <ActionCableConsumer
           channel="AppearancesChannel"
           onReceived={this.handleColorChange}
+          onDisconnected={this.componentWillUnmount}
         >
             <div className="buddy-list">
             <h2>Buddy List</h2>
