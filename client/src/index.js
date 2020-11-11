@@ -6,7 +6,8 @@ import reportWebVitals from './reportWebVitals';
 import { ActionCableProvider } from 'react-actioncable-provider';
 
 ReactDOM.render(
-  <ActionCableProvider url={'ws://localhost:3000/cable'}>
+  // <ActionCableProvider url={'ws://localhost:3000/cable'}>
+  <ActionCableProvider url={'ws://friendsinaction.herokuapp.com/cable'}>
       <App />
       </ActionCableProvider>,
   document.getElementById('root')
